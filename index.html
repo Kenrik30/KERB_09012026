@@ -4,20 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Título de mi Página</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <header>
-        <h1>Mi Sitio Web</h1>
+        <h1>Kevin Enrique Rafael Bonilla</h1>
     </header>
 
     <main>
-        <p>¡Hola, mundo! Este es mi primer código en HTML5.</p>
+        <aside class="aside">
+
+          <h3>Menu1</h3>
+          <h3>Menu2</h3>
+        </aside>
+        <section>
+        <form>
+            <h3>Formulario para Multiplicar</h3>
+            <label id="lbNumero1">Numero 1</label>
+            <input id="txtnumero1" class="inputtext" type="number" size="20"><br>
+            <label id="lbNumero2" >Numero 2</label>
+            <input id ="txtnumero2" class="inputtext" type="number" size="20"><br>
+            <button type="button">Multiplicar</button><br>
+            <label id="lbResultado">Resultado</label>
+            <input type="number" disabled id="txtResultado">
+
+        </form>
+        </section>
+        <section>
+           <form>
+            <h3>Formluario de registro personal</h3>
+            <label id="lbNombre">Nombre</label>
+            <input id="txtnombre" class="inputtext" type="text" size="20"><br>
+            <label id="lbApellido" >Apellido</label>
+            <input id ="txtapellido" class="inputtext" type="text" size="20"><br>
+            <button type="button">Registrar</button><br>
+            <label id="lbnombrecompleto">Nombrecompleto</label>
+            <input type="text" disabled id="txtNombreCompleto">
+
+           </form> 
+        </section>
+
+
+
     </main>
 
     <footer>
-        <p>&copy; 2026 - Todos los derechos reservados</p>
+        <p>&copy; 2026 - Todos los derechos reservados a Kevin Bonilla</p>
     </footer>
 
 </body>
