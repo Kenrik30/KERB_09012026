@@ -4,14 +4,32 @@ body {
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 50vh;
 }
 
-header, footer {
-    background-color: #3498db; 
+header {
+    background-color: #117bc1; 
     color: white;
     text-align: center;
-    padding: 15px;
+    padding: 1px 1px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-img {
+    width: 1px; 
+    height: 1px;
+    background-color: rgb(11, 11, 11);
+    border: 1px solid #000;
+}
+header h1 {
+    margin: 0;
+    flex-grow: 1;
+    text-align: center;
+}
+.spacer {
+    width: 1px; 
 }
 
 main {
@@ -29,10 +47,10 @@ main {
 
 section {
     flex: 1;            
-    padding: 40px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: right; 
 }
 section:first-of-type {
     border-right: 6px solid #00a434; 
@@ -42,11 +60,11 @@ section:first-of-type {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
-    width: 100%;
+    width: 90%;
 }
 
 .form-group label {
-    width: 120px;     
+    width: 75px;     
     flex-shrink: 0;
     user-select: none;
     cursor: default;
@@ -54,8 +72,9 @@ section:first-of-type {
 
 .inputtext, #txtNombreCompleto, #txtResultado {
     flex: 1;
+    width: 15px; 
+    height: 15px;
     padding: 8px;
-    border-radius: 8px;
     border: 1px solid #000;
 }
 
@@ -74,3 +93,10 @@ input:disabled {
 
 .button1 { background-color: #76b900; } 
 .button2 { background-color: #a50021; } 
+
+footer {
+    background-color: #117bc1; 
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+}
