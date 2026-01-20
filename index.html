@@ -6,54 +6,68 @@
     <title>Título de mi Página</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+   <header>
+    <h1>Kevin Enrique Rafael Bonilla</h1>
+    <div class="user-icon">
+        <img src="icono1.png" alt="icono1" width="100" height="100">
+    </div>
+</header>
+<main>
+    <aside class="aside">
+        <h3>Menu 1</h3>
+        <h3>Menu 2</h3>
+    </aside>
 
-    <header>
-        <h1>Kevin Enrique Rafael Bonilla</h1>
-    </header>
-
-    <main>
-        <aside class="aside">
-
-          <h3>Menu1</h3>
-          <h3>Menu2</h3>
-        </aside>
-        <section>
+    <section>
         <form>
             <h3>Formulario para Multiplicar</h3>
-            <label id="lbNumero1">Numero 1</label>
-            <input id="txtnumero1" class="inputtext" type="number" size="20"><br>
-            <label id="lbNumero2" >Numero 2</label>
-            <input id ="txtnumero2" class="inputtext" type="number" size="20"><br>
-            <button type="button">Multiplicar</button><br>
-            <label id="lbResultado">Resultado</label>
-            <input type="number" disabled id="txtResultado">
-
+            <div class="form-group">
+                <label for="txtnumero1">Número 1</label>
+                <input id="txtnumero1" class="inputtext" type="number">
+            </div>
+            <div class="form-group">
+                <label for="txtnumero2">Número 2</label>
+                <input id="txtnumero2" class="inputtext" type="number">
+            </div>
+            <button id="btnMultiplicar" type="button" class="button button1">Multiplicar</button>
+            <div class="form-group">
+                <label for="txtresultado">Resultado</label>
+                <input id="txtresultado" class="inputtext" type="number" disabled>
+            </div>
+            <div class="form-group">
+                <label for="txtfechaactual">Fecha Actual</label>
+                <input id="txtfechaactual" class="inputtext" type="text" disabled>
+            </div>
         </form>
-        </section>
-        <section>
-           <form>
-            <h3>Formluario de registro personal</h3>
-            <label id="lbNombre">Nombre</label>
-            <input id="txtnombre" class="inputtext" type="text" size="20"><br>
-            <label id="lbApellido" >Apellido</label>
-            <input id ="txtapellido" class="inputtext" type="text" size="20"><br>
-            <button type="button">Registrar</button><br>
-            <label id="lbnombrecompleto">Nombrecompleto</label>
-            <input type="text" disabled id="txtNombreCompleto">
+    </section>
 
-           </form> 
-        </section>
-
-
-
-    </main>
-
+    <section>
+        <form>
+            <h3>Formulario de registro personal</h3>
+            <div class="form-group">
+                <label for="txtnombre">Nombre</label>
+                <input id="txtnombre" class="inputtext" type="text">
+            </div>
+            <div class="form-group">
+                <label for="txtapellido">Apellido</label>
+                <input id="txtapellido" class="inputtext" type="text">
+            </div>
+            <button type="button" class="button button2" id="btnregistrar">Registrar</button>
+            <div class="form-group">
+                <label for="txtNombreCompleto">Nombre completo</label>
+                <input id="txtNombreCompleto" class="inputtext" type="text" disabled>
+            </div>
+            <div class="user-icon">
+        <img src="icono2.png" alt="icono2" width="100" height="100" style="float:right">
+    </div>
+        </form>
+    </section>
+</main>
     <footer>
         <p>&copy; 2026 - Todos los derechos reservados a Kevin Bonilla</p>
     </footer>
+<script src="script.js"></script>
 
 </body>
 </html>
-

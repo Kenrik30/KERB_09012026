@@ -1,55 +1,102 @@
 
-* {
-    box-sizing: border-box;
+body {
     margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 50vh;
 }
 
-/* Header y Footer con Flexbox (como el prototipo) */
-header, footer {
-    background-color: #3498db; /* Azul del prototipo */
-    color: black;
-    padding: 15px;
+header {
+    background-color: #117bc1; 
+    color: white;
     text-align: center;
+    padding: 1px 1px;
+
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    border: 1px solid #2980b9;
+}
+.header-img {
+    width: 1px; 
+    height: 1px;
+    background-color: rgb(11, 11, 11);
+    border: 1px solid #000;
+}
+header h1 {
+    margin: 0;
+    flex-grow: 1;
+    text-align: center;
+}
+.spacer {
+    width: 1px; 
 }
 
 main {
-    display: grid;
-    grid-template-columns: 200px 1fr 1fr; 
-    min-height: 400px;
+    display: flex; 
+    flex: 1;           
 }
 
 .aside {
-    background-color: #6d8263; 
+    width: 150px;
+    background-color: #297707; 
+    color: white;
     padding: 20px;
-    border-right: 1px solid black; 
-}
-
-.aside h3 {
-    font-weight: normal;
-    font-size: 1.1rem;
-    margin-bottom: 10px;
+    flex-shrink: 0;     
 }
 
 section {
-    padding: 15px;
-    border-right: 15px solid green;
+    flex: 1;            
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: right; 
+}
+section:first-of-type {
+    border-right: 6px solid #00a434; 
 }
 
-section:last-of-type {
-    border-right: none;
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    width: 90%;
 }
 
-input {
-    display: block;
-    margin-bottom: 10px;
+.form-group label {
+    width: 75px;     
+    flex-shrink: 0;
+    user-select: none;
+    cursor: default;
+}
+
+.inputtext, #txtNombreCompleto, #txtResultado {
+    flex: 1;
+    width: 15px; 
+    height: 15px;
+    padding: 8px;
     border: 1px solid #000;
 }
 
-#txtResultado, #txtNombreCompleto, [id^="txtResultado"] {
-    background-color: #bdc3c7; 
+input:disabled {
+    background-color: #cbd5e0;
+}
+.button {
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.button1 { background-color: #76b900; } 
+.button2 { background-color: #a50021; } 
+
+footer {
+    background-color: #117bc1; 
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
 }
